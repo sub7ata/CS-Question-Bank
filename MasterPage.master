@@ -1,0 +1,167 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" />
+    <link id="link1" runat="server" rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+    <link id="link2" runat="server" rel="icon" href="favicon.ico" type="image/ico" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="top">
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="clear"> 
+    <!-- ################################################################################################ -->
+    <nav>
+      <ul>
+        <li><a href="Default.aspx">Home</a></li>
+        <li><a href="Login.aspx">Admin</a></li>
+        <li><a href="AboutUs.aspx">About Us</a></li>
+        <li><a href="ContactUs.aspx">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="index.html">CS Questions Bank</a></h1>
+      <p>Find all questions in one place</p>
+    </div>
+    <div class="fl_right">
+      <form class="clear" method="post" action="#">
+        <fieldset>
+          <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Search.aspx">Search</asp:HyperLink>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div class="rounded">
+    <nav id="mainav" class="clear"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="Default.aspx">Home</a></li>
+        <li><a class="drop" href="#">Upload Question</a>
+          <ul>
+            <li><a href="UploadPreviousYearQuestion.aspx">Previous year</a></li>
+            <li><a href="InsertSingleQuestion.aspx">Insert Question</a> </li>
+          </ul>
+        </li>
+        <li><a href="Subjects.aspx">Subjects</a></li>
+         <li><a href="UserSuggetions.aspx">User Suggestion</a></li>
+
+      </ul>
+      <!-- ################################################################################################ --> 
+    </nav>
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper">
+  <div id="slider">
+    <div id="slide-wrapper" class="rounded clear"> 
+      <!-- ################################################################################################ -->
+      <figure id="slide-1"><a class="view" href="#"><img src="images/demo/slider/1.png" alt=""></a>
+        <figcaption>
+          <h2>BSc, Vidyasagar University</h2>
+          <p>Previous year question papers can be viewed or downloded.</p>
+          <p class="right"><a href="Bsc.aspx">Click Here &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <figure id="slide-2"><a class="view" href="#"><img src="images/demo/slider/2.png" alt=""></a>
+        <figcaption>
+          <h2>BCA, Vidyasagar University</h2>
+          <p>Previous year question papers can be viewed or downloded.</p>
+          <p class="right"><a href="Bca.aspx">Click Here &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <figure id="slide-3"><a class="view" href="#"><img src="images/demo/slider/3.png" alt=""></a>
+        <figcaption>
+          <h2>MSc, Vidyasagar University</h2>
+          <p>Previous year question papers can be viewed or downloded.</p>
+          <p class="right"><a href="Msc.aspx">Click Here &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <figure id="slide-4"><a class="view" href="#"><img src="images/demo/slider/4.png" alt=""></a>
+        <figcaption>
+          <h2>MCA, Vidyasagar University</h2>
+          <p>Previous year question papers can be viewed or downloded.</p>
+          <p class="right"><a href="Mca.aspx">Click Here &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <figure id="slide-5"><a class="view" href="#"><img src="images/demo/slider/5.png" alt=""></a>
+        <figcaption>
+          <h2>Other Universities</h2>
+          <p>Others Univercity Previous year question papers can be viewed or downloded</p>
+          <p class="right"><a href="OthersUniversity.aspx">Click Here &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <!-- ################################################################################################ -->
+      <ul id="slide-tabs">
+        <li><a href="#slide-1">VU-BSc(Computer Science)</a></li>
+        <li><a href="#slide-2">VU-BCA (Computer Application)</a></li>
+        <li><a href="#slide-3">VU-MSc (Computer Science)</a></li>
+        <li><a href="#slide-4">VU-MCA(Computer Application)</a></li>
+        <li><a href="#slide-5">Other Universities</a></li>
+      </ul>
+      <!-- ################################################################################################ --> 
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <div class="rounded">
+    <main class="container clear"> 
+      <!-- main body --> 
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-30">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+      </div>
+      <!-- ################################################################################################ --> 
+      
+      <!-- / main body -->
+      <div class="clear"></div>
+    </main>
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2016 -  <a target="_blank" href="http://www.facebook.com/anirban.sasmal.399">Anirban</a>, <a target="_blank" href="http://www.facebook.com/ramchandra.jana.948">Ramchandra</a>, <a target="_blank" href="http://www.facebook.com/subratadasbca">Subrata</a></p>
+    <p class="fl_right"><a target="_blank" href="http://www.panskurabanamalicollege.org/" title="Panskura Banamali College">Panskura Banamali College</a></p>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- JAVASCRIPTS --> 
+<script src="layout/scripts/jquery.min.js"></script> 
+<script src="layout/scripts/jquery.fitvids.min.js"></script> 
+<script src="layout/scripts/jquery.mobilemenu.js"></script> 
+<script src="layout/scripts/tabslet/jquery.tabslet.min.js"></script>
+</body>
+</html>
